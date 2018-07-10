@@ -51,11 +51,6 @@ html {
 
 /*--- GENERAL STYLES / CLASSES ---*/
 
-a:hover {
-    text-decoration: underline;
-    opacity: .5;
-}
-
 .section-main-title {
     font-family: "Sintony", serif;
     font-size: 3.5rem;
