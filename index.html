@@ -3,8 +3,8 @@
 
     <head>
         <title>Colmar Academy</title>
-        <link href="style/css/reset.css" type="text/css" rel="stylesheet">
-        <link href="style/css/style.css" type="text/css" rel="stylesheet">
+        <link href="resources/css/reset.css" type="text/css" rel="stylesheet">
+        <link href="resources/css/style.css" type="text/css" rel="stylesheet">
         <meta name="author" conten="Jean Pierre">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,9 +14,9 @@
         
         <!--- HEADER SECTION --->
         
-        <header id="header">
+        <header id="header" class="full">
             <div class="logo flex uppercase container">
-                <img src="style/images/ic-logo.svg" alt="Colmar Logo" class="logo-img">
+                <img src="resources/images/ic-logo.svg" alt="Colmar Logo" class="logo-img">
                 <span class="colmar-logo">Colmar</span>
                 <span class="academy-logo">Academy</span>
             </div>
@@ -29,71 +29,73 @@
             </nav>
 
             <nav class="mobile">
-                <img src="style/images/ic-logo.svg" alt="Colmar Logo">
-                <img src="style/images/ic-on-campus.svg">
-                <img src="style/images/ic-online.svg">
-                <img src="style/images/ic-login.svg">
+                <img src="resources/images/ic-logo.svg" alt="Colmar Logo">
+                <img src="resources/images/ic-on-campus.svg">
+                <img src="resources/images/ic-online.svg">
+                <img src="resources/images/ic-login.svg">
             </nav>
         </header>
         
         <!--- BANNER SECTION --->
         
-        <div class="banner flex">
-                <img src="style/images/banner.jpg" alt="girls studying">
+        <div class="banner flex full">
+                <img src="resources/images/banner.jpg" alt="girls studying">
             <div class="cta flex">
                 <h1>Learn something new everyday</h1>
                 <h2>Explore all your talents and live like never before</h2>
                 <div class="cta-btn">
-                    <span>Start here</span>
+                    <span><a href="#">Start here</a></span>
                 </div>
             </div>
         </div>
         
         <!--- MAIN CONTENT SECTION --->
         
-        <div id="main-content">
+        <div id="main-content" class="flex full">
             <div class="information-img">
-                <img src="style/images/information-main.jpg" alt="guy reading">
-                <h2>It doesn't hurt to keep practicing</h2>
-                <blockquote>
-                    <p>Lorem ipsum dolor sit amet, ut tale saperet tractatos vim. Vim altera fierent argumentum et, id dicit putant pro, dolor iriure oblique ad eam. Et quem semper noluisse est, quas rebum recteque ei ius, no sed sonet noster accumsan. Cu suscipit adolescens vim. At ius hinc veri omnis, tritani virtute qui ad, has illud neglegentur ei.</p>
-                    <span>Emmanuel, Sr. Strategis at Hiring.com</span>
-                </blockquote>
+                <img src="resources/images/information-main.jpg" alt="guy reading">
+                <div class="main-news">
+                    <h2>It doesn't hurt to keep practicing</h2>
+                    <blockquote>
+                        <p>"Lorem ipsum dolor sit amet, ut tale saperet tractatos vim. Vim altera fierent argumentum et, id dicit putant pro, dolor iriure oblique ad eam. Et quem semper noluisse est, quas rebum recteque ei ius, no sed sonet noster accumsan. Cu suscipit adolescens vim. At ius hinc veri omnis, tritani virtute qui ad, has illud neglegentur ei."</p>
+                        <span>Emmanuel, Sr. Strategis at Hiring.com</span>
+                    </blockquote>
+                </div>
             </div>
             
             <!--- SUB CONTENT SECTION --->
             
             <div class="sub-content">
-                <div>
+                <div class="sub-news flex">
                     <div class="sub-img">
-                    <img src="style/images/information-orientation.jpg">
+                    <img src="resources/images/information-orientation.jpg">
                     </div>
-                    <div>
+                    <div class="sub-text">
                         <h3>Orientation date</h3>
                         <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
-                        <span><a href="#">Read more</a></span>
+                        <span><a href="#" target="_blank">Read more</a></span>
                     </div>
                 </div>
                 
-                <div>
+                <div class="sub-news flex">
                     <div class="sub-img">
-                    <img src="style/images/information-campus.jpg">
+                    <img src="resources/images/information-campus.jpg">
                     </div>
-                    <div>
+                    <div class="sub-text">
                         <h3>Our campus</h3>
                         <p>Find wich campus is close by you</p>
-                        <span><a href="#">Read more</a></span>
+                        <span><a href="#" target="_blank">Read more</a></span>
                     </div>                
                 </div>
                 
-                <div>
+                <div class="sub-news flex">
                     <div class="sub-img">
-                    <img src="style/images/information-orientation.jpg">
+                    <img src="resources/images/information-guest-lecture.jpg">
                     </div>
-                    <div>
+                    <div class="sub-text">
                         <h3>Our guest lecture</h3>
-                        <p>Join a keynote with Oliver Sack about music in medical tratment</p>
-                        <span><a href="#">Read more</a></span>
+                        <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+                        <span><a href="#" target="_blank">Read more</a></span>
                     </div>                
                 </div>
             </div>
@@ -101,70 +103,73 @@
         
         <!--- START LEARNING SECTION --->
         
-        <div id="learning">
-            <div>
-                <div class="learning-img">
-                <img src="style/images/course-software.jpg">
+        <div id="learning" class="flex full">
+            <h1>Start Learning</h1>
+            <div class="courses flex">
+                <div class="course">
+                    <div class="learning-img">
+                        <img src="resources/images/course-software.jpg">
+                    </div>
+                    <div class="course-info">
+                        <h3>Software engineering</h3>
+                        <span>courses</span>
+                        <p>Web Development, Mobile Development, iOT, API's</p>
+                    </div>              
                 </div>
-                <div>
-                    <h3>Software engineering</h3>
-                    <span>courses</span>
-                    <p>Web Development, Mobile Development, iOT, API's</p>
-                </div>              
-            </div>
-            
-            <div>
-                <div class="learning-img">
-                <img src="style/images/course-computer-art.jpg">
+
+                <div class="course">
+                    <div class="learning-img">
+                    <img src="resources/images/course-computer-art.jpg">
+                    </div>
+                    <div class="course-info">
+                        <h3>Computer art</h3>
+                        <span>courses</span>
+                        <p>Imagine &amp; Desing, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+                    </div>
                 </div>
-                <div>
-                    <h3>Computer art</h3>
-                    <span>courses</span>
-                    <p>Imagine &amp; Desing, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+
+                <div class="course">
+                    <div class="learning-img">
+                    <img src="resources/images/course-design.jpg">
+                    </div>
+                    <div class="course-info">
+                        <h3>Design</h3>
+                        <span>courses</span>
+                        <p>User Experience Design, User Research, Visual Design</p>
+                    </div>
                 </div>
-            </div>
-            
-            <div>
-                <div class="learning-img">
-                <img src="style/images/course-design.jpg">
+
+                <div class="course">
+                    <div class="learning-img">
+                    <img src="resources/images/course-data.jpg">
+                    </div>
+                    <div class="course-info">
+                        <h3>Data</h3>
+                        <span>courses</span>
+                        <p>Data Science, Big Data, SQL, Data Visualization</p>
+                    </div>
                 </div>
-                <div>
-                    <h3>Design</h3>
-                    <span>courses</span>
-                    <p>User Experience Design, User Research, Visual Design</p>
+
+                <div class="course">
+                    <div class="learning-img">
+                    <img src="resources/images/course-business.jpg">
+                    </div>
+                    <div class="course-info">
+                        <h3>Business</h3>
+                        <span>courses</span>
+                        <p>Product Development, Business Development, Startup</p>
+                    </div>
                 </div>
-            </div>
-            
-            <div>
-                <div class="learning-img">
-                <img src="style/images/course-data.jpg">
-                </div>
-                <div>
-                    <h3>Data</h3>
-                    <span>courses</span>
-                    <p>Data Science, Big Data, SQL, Data Visualization</p>
-                </div>
-            </div>
-            
-            <div>
-                <div class="learning-img">
-                <img src="style/images/course-business.jpg">
-                </div>
-                <div>
-                    <h3>Business</h3>
-                    <span>courses</span>
-                    <p>Product Development, Business Development, Startup</p>
-                </div>
-            </div>
-            
-            <div>
-                <div class="learning-img">
-                <img src="style/images/course-marketing.jpg">
-                </div>
-                <div>
-                    <h3>Marketing</h3>
-                    <span>courses</span>
-                    <p>Analytics, Content Marketing, Mobile Marketing</p>
+
+                <div class="course">
+                    <div class="learning-img">
+                    <img src="resources/images/course-marketing.jpg">
+                    </div>
+                    <div class="course-info">
+                        <h3>Marketing</h3>
+                        <span>courses</span>
+                        <p>Analytics, Content Marketing, Mobile Marketing</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -174,7 +179,7 @@
         <div id="thesis">
             <div class="thesis-video">
                 <video controls>
-                    <source src="style/videos/thesis.mp4" type="video/mp4">
+                    <source src="resources/videos/thesis.mp4" type="video/mp4">
                 </video>
                 <h2>It doesn't hurt to keep practicing</h2>
                 <blockquote>
@@ -188,7 +193,7 @@
             <div class="sub-content">
                 <div>
                     <div class="sub-img">
-                    <img src="style/images/thesis-fisma.jpg">
+                    <img src="resources/images/thesis-fisma.jpg">
                     </div>
                     <div>
                         <h3>Fisma: Design and Prototype</h3>
@@ -198,7 +203,7 @@
                 
                 <div>
                     <div class="sub-img">
-                    <img src="style/images/thesis-now-and-then.jpg">
+                    <img src="resources/images/thesis-now-and-then.jpg">
                     </div>
                     <div>
                         <h3>Now and then</h3>
