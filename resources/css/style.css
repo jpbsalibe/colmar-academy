@@ -128,15 +128,16 @@ html {
     display: none;
 }
 
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:1024px) {
     
     .mobile {
         width: 100%;
         display: flex;
         height: 4rem;
-        justify-content: space-between;
-        align-content: center;
+        justify-content: space-around;
+        align-items: center;
     }
+    
     
     .nav-desktop {
         display: none;
@@ -203,7 +204,7 @@ html {
     transition-timing-function: ease-in-out;
 }
 
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:1024px) {
     
     .banner {
         background-color: #fff;
@@ -281,7 +282,7 @@ html {
     font-weight: 700;
 }
 
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:1024px) {
     
     .information-img {
         display: none;
@@ -352,7 +353,7 @@ html {
     display: none;
 }
 
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:1024px) {
  
     .desktop {
         display: none;
@@ -469,7 +470,7 @@ html {
     color: #04756F;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1024px) {
     
     .learning-desktop {
         display: none;
@@ -491,6 +492,7 @@ html {
         font-weight: 700;
         background-color: rgba(255, 140, 0, 0.7);
         padding: 1rem 0 1.5rem 1rem;
+        text-decoration: underline;
     }
     
     .section-main-title {
@@ -576,7 +578,7 @@ footer span {
     margin: 1rem;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1024px) {
     
     footer {
         justify-content: center;
