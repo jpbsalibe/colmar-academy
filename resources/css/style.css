@@ -75,6 +75,8 @@ html {
 
 
 
+
+
 /* --- HEADER ---*/ 
 
 #header {
@@ -126,17 +128,22 @@ html {
     display: none;
 }
 
-@media only screen and(max-width:760px) {
-    .logo span {
-        display: none;
+@media only screen and (max-width:480px) {
+    
+    .mobile {
+        width: 100%;
+        display: flex;
+        height: 4rem;
+        justify-content: space-between;
+        align-content: center;
     }
     
     .nav-desktop {
         display: none;
     }
     
-    .mobile {
-        display: initial;
+    .logo {
+        display: none;
     }
 }
 
@@ -196,6 +203,41 @@ html {
     transition-timing-function: ease-in-out;
 }
 
+@media only screen and (max-width:480px) {
+    
+    .banner {
+        background-color: #fff;
+        flex-direction: column;
+        width: 100%;
+    }
+   
+    .banner img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .cta {
+        width: 100%;
+        background-color: rgba(255, 140, 0, 0.7);
+    }
+
+    .cta h1 {
+        font-size: 2rem;
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+    
+    .cta h2 {
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    
+    .cta-btn {
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        width: 90%;
+    }
+}
 
 
 /*--- MAIN CONTENT SECTION ---*/
@@ -237,6 +279,17 @@ html {
     font-style: italic;
     font-size: 0.9rem;
     font-weight: 700;
+}
+
+@media only screen and (max-width:480px) {
+    
+    .information-img {
+        display: none;
+    }
+    
+    .content-container {
+        margin: 0 auto;
+    }
 }
 
 /*--- SUB CONTENT SECTION --*/
@@ -293,6 +346,59 @@ html {
 
 .sub-content .sub-news:last-child {
     background-color: rgba(255, 140, 0, 0.7);
+}
+
+.sub-content-mobile {
+    display: none;
+}
+
+@media only screen and (max-width:480px) {
+ 
+    .desktop {
+        display: none;
+    }
+    
+    .sub-content-mobile {
+        display: flex;
+        margin: 1rem;
+        flex-direction: column;
+    }
+    
+    .sub-news {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 4rem;
+        margin-left: 0;
+    }
+    
+    .sub-img {
+        width: 100%;
+    }
+    
+    .sub-text {
+        width: 100%;
+    }
+    
+    .sub-text h3 {
+        font-family: "Sintony", serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: .5rem;
+    }
+    
+    .sub-text p {
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        margin-bottom: .5rem;
+    }
+
+    .sub-text a {
+        font-family: "Poppins", sans-serif;
+        color: #04756F;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 1rem;
+        }
 }
 
 /*--- START LEARNING SECTION ---*/
@@ -363,6 +469,44 @@ html {
     color: #04756F;
 }
 
+@media only screen and (max-width: 480px) {
+    
+    .learning-desktop {
+        display: none;
+        margin: 0 auto;
+    }
+    
+    .learning-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .learning-mobile h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .learning-mobile h3 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        background-color: rgba(255, 140, 0, 0.7);
+        padding: 1rem 0 1.5rem 1rem;
+    }
+    
+    .section-main-title {
+        margin-bottom: 1rem;
+    }
+    
+    .courses {
+        margin: 0;
+    }
+    
+    .course-info {
+        padding: 0;
+    }
+    
+}
+
 /*--- THESIS EXHIBIT SECTION ---*/ 
 
 
@@ -390,6 +534,25 @@ html {
     background-color: #fff;
 }
 
+@media only screen and (max-width: 480px){
+    
+    #thesis .sub-content,
+    #thesis .main-news {
+        display: none;
+    }
+    
+    #thesis h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .thesis-video {
+        width: 100%;
+        margin: 1rem 0 1.5rem 0;
+    }
+}
+
 /*--- FOOTER ---*/
 
 footer {
@@ -397,7 +560,6 @@ footer {
     justify-content: space-between;
     height: 3rem;
     margin-top: 1rem;
-    border-top: solid 1px #04756F;
     padding-top: .5rem;
     background-color: black;
 }
@@ -412,6 +574,14 @@ footer a {
 
 footer span {
     margin: 1rem;
+}
+
+@media only screen and (max-width: 480px) {
+    
+    footer {
+        justify-content: center;
+    }
+    
 }
 
 
