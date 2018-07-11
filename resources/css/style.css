@@ -582,6 +582,7 @@ footer span {
     
     footer {
         justify-content: center;
+        color: rgba(255, 140, 0);
     }
     
 }
