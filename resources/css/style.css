@@ -536,7 +536,7 @@ html {
     background-color: #fff;
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 1024px){
     
     #thesis .sub-content,
     #thesis .main-news {
