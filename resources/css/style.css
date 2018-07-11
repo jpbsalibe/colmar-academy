@@ -73,10 +73,6 @@ html {
     margin: 0 auto;
 }
 
-
-
-
-
 /* --- HEADER ---*/ 
 
 #header {
@@ -470,6 +466,10 @@ html {
     color: #04756F;
 }
 
+.learning-mobile {
+    display: none;
+}
+
 @media only screen and (max-width: 1024px) {
     
     .learning-desktop {
@@ -505,6 +505,7 @@ html {
     
     .course-info {
         padding: 0;
+        margin: 1rem;
     }
     
 }
@@ -562,7 +563,7 @@ footer {
     justify-content: space-between;
     height: 3rem;
     margin-top: 1rem;
-    padding-top: .5rem;
+    padding-top: 1rem;
     background-color: black;
 }
 
@@ -583,6 +584,7 @@ footer span {
     footer {
         justify-content: center;
         color: rgba(255, 140, 0);
+        font-size: .7rem;
     }
     
 }
